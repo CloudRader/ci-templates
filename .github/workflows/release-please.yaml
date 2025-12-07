@@ -24,7 +24,7 @@ jobs:
 
       - name: Copy shared config
         run: |
-          cp ci-templates/release-please/release-please-config.json .github/release-please-config.json
+          cp ci-templates/configs/release-please/release-please-config.json .github/release-please-config.json
 
       - uses: googleapis/release-please-action@v4
         with:
