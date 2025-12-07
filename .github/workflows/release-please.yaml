@@ -22,21 +22,9 @@ jobs:
           repository: CloudRader/ci-templates
           path: ci-templates
 
-      # --------------------
-      # Debug steps
-      # --------------------
-      - name: Debug print directory tree
+      - name: Copy shared config
         run: |
-          pwd
-          ls -R .
-
-      - name: Debug show .github folder
-        run: |
-          ls -R .github || true
-
-      - name: Debug show ci-templates folder
-        run: |
-          ls -R ci-templates || true
+          cp ci-templates/release-please/release-please-config.json .github/release-please-config.json
 
       - uses: googleapis/release-please-action@v4
         with:
