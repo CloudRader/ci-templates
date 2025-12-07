@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: CloudRader/ci-templates
-          path: ci-templates
+          path: ci-templates/configs
 
       - uses: googleapis/release-please-action@v4
         with:
