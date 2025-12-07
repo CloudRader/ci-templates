@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/CloudRader/ci-templates/compare/v0.2.0...v0.2.1) (2025-12-07)
+
+
+### 🛠️ Fixes
+
+* move reusable template to correct path ([5c43871](https://github.com/CloudRader/ci-templates/commit/5c438710aba04ec3063abbfbefd4bda827a70486))
+
 ## [0.2.0](https://github.com/CloudRader/ci-templates/compare/v0.1.0...v0.2.0) (2025-12-06)
 
 
