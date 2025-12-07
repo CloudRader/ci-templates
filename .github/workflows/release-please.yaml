@@ -22,6 +22,22 @@ jobs:
           repository: CloudRader/ci-templates
           path: ci-templates
 
+      # --------------------
+      # Debug steps
+      # --------------------
+      - name: Debug print directory tree
+        run: |
+          pwd
+          ls -R .
+
+      - name: Debug show .github folder
+        run: |
+          ls -R .github || true
+
+      - name: Debug show ci-templates folder
+        run: |
+          ls -R ci-templates || true
+
       - uses: googleapis/release-please-action@v4
         with:
           target-branch: main
